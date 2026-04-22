@@ -25,9 +25,6 @@ LoFTDF reports strong performance on M3T-UAV:
 - **Visible -> Satellite**: VPS = **0.9036**
 - **Infrared -> Satellite**: VPS = **0.4421**
 
-## M3T-UAV Dataset
-
-For detailed M3T-UAV dataset documentation, see `data/m3t/README_m3t.md`.
 
 ## Training and Testing Pipeline
 
@@ -42,7 +39,7 @@ Quick commands:
 ```bash
 python train.py --stage pretrain
 python train.py --stage finetune
-python test.py configs/data/m3t_test.py configs/loftdf/test.py --ckpt_path weights/loftdf_pretrain.ckpt
+python test.py configs/data/m3t_test.py configs/loftdf/test.py 
 ```
 
 Recommended scripts:
@@ -53,7 +50,7 @@ bash scripts/reproduce_train/finetune_megadepth.sh
 bash scripts/reproduce_test/test_m3t.sh
 ```
 
-## M3T-UAV Dataset Notes
+## M3T-UAV Dataset
 
 M3T-UAV is organized into training and testing splits, with modality-specific folders (`uav_vis`, `uav_ir`, `map`) and merged annotation files (`vis.json`, `ir.json`). The annotations include image paths, geometric transformation matrices, and localization-related metadata.
 
@@ -62,6 +59,8 @@ The dataset is intended for research on:
 - UAV-to-satellite matching
 - cross-modal geometric registration
 - robust geolocalization under scene and temporal changes
+
+For detailed M3T-UAV dataset documentation, see `data/m3t/README_m3t.md`.
 
 ## Resources
 
