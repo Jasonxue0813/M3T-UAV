@@ -1,10 +1,12 @@
-# M3T-UAV and LoFTDF
+# M3T-UAV
 
 This repository provides the **M3T-UAV dataset** and the **LoFTDF** framework for UAV visual geolocalization under multi-modal, multi-scene, and multi-temporal conditions.
 
 ## Overview
 
-Reliable UAV geolocation is critical for autonomous navigation in GNSS-denied or spoofed environments. Existing vision-based methods are often limited by single-modality data, small-scale benchmarks, and weak generalization across scene and temporal variations.
+Reliable UAV geolocation is critical for autonomous navigation in GNSS-denied or spoofed environments. Existing vision-based methods are often limited by single-modality data, small-scale benchmarks, and weak generalization across scene and temporal variations. 
+
+The complete code and dataset are available at: [JinHaiXu0322/M3T-UAV](https://github.com/JinHaiXu0322/M3T-UAV).
 
 To address these challenges, this project combines:
 
